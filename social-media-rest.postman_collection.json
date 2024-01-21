@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "18bb5971-0083-41f6-aab4-28b6607b3d89",
+		"name": "social-media-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8669354"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\":\"Shivang\",\n    \"lastname\":\"Sharma\",\n    \"username\":\"shivangs\",\n    \"email\":\"sharmashivang071@gmail.com\",\n    \"password\":\"Password@2021\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/v1/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sharmashivang071@gmail.com\",\n    \"password\":\"Password@2021\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/v1/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/shivang/Pictures/deno-image.png"
+								},
+								{
+									"key": "caption",
+									"value": "Screenshots",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:5000/api/v1/post"
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5000/api/v1/post/651ceada982c973f3f0a68d9"
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/v1/post/651afef0bed48e77fae57b96"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comment",
+			"item": [
+				{
+					"name": "comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/v1/comment/651cec03072de1c99eb766b1"
+					},
+					"response": []
+				},
+				{
+					"name": "comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5000/api/v1/comment/651cec03072de1c99eb766b1/651cecbf072de1c99eb766ca"
+					},
+					"response": []
+				},
+				{
+					"name": "comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\":\"Test comment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/api/v1/comment/651cec03072de1c99eb766b1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "feed",
+			"item": [
+				{
+					"name": "feed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWFmZWYwYmVkNDhlNzdmYWU1N2I5NiIsImVtYWlsIjoic2hhcm1hc2hpdmFuZzA3MUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InNoaXZhbmdzIiwibmFtZSI6IlNoaXZhbmcgU2hhcm1hIiwiaWF0IjoxNjk2MzU2ODAyLCJleHAiOjE2OTY0MTY4MDJ9.qwBum__B5YeFxH3Fer9wuNFS2M0n7MPgPbqcpjQ9vSY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/v1/feed"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/api/health"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
