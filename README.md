@@ -3,15 +3,16 @@ Social media backend using Mongo, express, and socket.io
 ### REST collection is included in the repo
 ### To test socket.io with Postman
   - Click on New
-  - ![Screenshot from 2024-01-21 12-14-08](https://github.com/shivang-sharma/social-media-backend/assets/70644519/97e684d8-1067-4ce4-b520-a3ccac279710)
+  - ![Screenshot from 2024-01-21 12-14-08](https://github.com/shivang-sharma/social-media-backend/assets/70644519/f4c4f931-3162-4877-a1f7-6556b5d6015a)
   - Choose Socket.io
-  - ![Screenshot from 2024-01-21 12-15-01](https://github.com/shivang-sharma/social-media-backend/assets/70644519/0bf4f9bf-1dbc-4be3-9f25-38e0e8d9110d)
+  - ![Screenshot from 2024-01-21 12-15-01](https://github.com/shivang-sharma/social-media-backend/assets/70644519/716608e3-2fee-4414-adc0-3a95ae8bd2a3)
   - Enter server URL
-  - ![Screenshot from 2024-01-21 12-16-12](https://github.com/shivang-sharma/social-media-backend/assets/70644519/9f5c7866-8677-4962-82bb-082acc60ef70)
+  - ![Screenshot from 2024-01-21 12-16-12](https://github.com/shivang-sharma/social-media-backend/assets/70644519/1f653005-7e07-488c-a151-ae1b4ba70661)
   - Click on Events and add events to listen
-  - ![Screenshot from 2024-01-21 12-17-17](https://github.com/shivang-sharma/social-media-backend/assets/70644519/3b2dd9d9-76e1-4e61-8183-39e3e22d85ac)
+  - ![Screenshot from 2024-01-21 12-17-17](https://github.com/shivang-sharma/social-media-backend/assets/70644519/1a06b19d-9e58-43f7-a4af-d768c99ad5f3)
   - Click on headers and add Authorization header and send bearer token (to retrieve the token use rest collection)
-  - ![Screenshot from 2024-01-21 12-17-45](https://github.com/shivang-sharma/social-media-backend/assets/70644519/40d06e06-f4c2-457c-9b1b-e61bdb2a9f66)
+  - ![Screenshot from 2024-01-21 12-17-45](https://github.com/shivang-sharma/social-media-backend/assets/70644519/4afc05ce-9b25-41e4-98b1-1f02000020bd)
+
 
     
 
